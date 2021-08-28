@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiscoLeveActivity">
+
+        <TextView
+            android:id = "@+id/risco_baixo_titulo"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "Risco baixo"
+            android:textSize = "25dp"
+            android:textStyle = "bold"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"/>
+
+        <TextView
+            android:id = "@+id/risco_baixo_t1"
+            android:layout_width = "350dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "	Manutenção da higiene corporal, mantendo a pele limpa e seca."
+            android:textSize = "20dp"
+            android:textStyle = "bold"
+            app:layout_constraintStart_toStartOf = "@id/risco_baixo_titulo"
+            app:layout_constraintTop_toBottomOf = "@id/risco_baixo_titulo"/>
+
+        <TextView
+            android:id = "@+id/risco_baixo_t2"
+            android:layout_width = "350dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "	Hidratação diária da pele do paciente com hidratantes e umectantes."
+            android:textSize = "20dp"
+            android:textStyle = "bold"
+            app:layout_constraintEnd_toEndOf = "@id/risco_baixo_t1"
+            app:layout_constraintStart_toStartOf = "@id/risco_baixo_t1"
+            app:layout_constraintTop_toBottomOf = "@id/risco_baixo_t1"/>
+        <ImageView
+            android:id = "@+id/risco_baixo_i1"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:background = "@drawable/hidratante"
+            app:layout_constraintEnd_toEndOf = "@id/risco_baixo_t2"
+            app:layout_constraintStart_toStartOf = "@id/risco_baixo_t2"
+            app:layout_constraintTop_toBottomOf = "@id/risco_baixo_t2"/>
+
+        <TextView
+            android:id = "@+id/risco_baixo_t3"
+            android:layout_width = "350dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "	Avaliar e examinar a pele do paciente diariamente e registrar."
+            android:textSize = "20dp"
+            android:textStyle = "bold"
+            app:layout_constraintEnd_toEndOf = "@id/risco_baixo_i1"
+            app:layout_constraintStart_toStartOf = "@id/risco_baixo_i1"
+            app:layout_constraintTop_toBottomOf = "@id/risco_baixo_i1"/>
+
+        <TextView
+            android:id = "@+id/risco_baixo_t4"
+            android:layout_width = "350dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "	Mudança de posição a cada duas horas para reduzir a pressão local."
+            android:textSize = "20dp"
+            android:textStyle = "bold"
+            app:layout_constraintEnd_toEndOf = "@id/risco_baixo_t3"
+            app:layout_constraintStart_toStartOf = "@id/risco_baixo_t3"
+            app:layout_constraintTop_toBottomOf = "@id/risco_baixo_t3"/>
+
+        <TextView
+            android:id = "@+id/risco_baixo_t5"
+            android:layout_width = "350dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "	Uso de colchão especial, almofadas e/ou de coxins para redistribuir a pressão. "
+            android:textSize = "20dp"
+            android:textStyle = "bold"
+            app:layout_constraintEnd_toEndOf = "@id/risco_baixo_t4"
+            app:layout_constraintStart_toStartOf = "@id/risco_baixo_t4"
+            app:layout_constraintTop_toBottomOf = "@id/risco_baixo_t4"/>
+        <ImageView
+            android:id = "@+id/risco_baixo_i4"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:background = "@drawable/lpcolchao"
+            app:layout_constraintEnd_toEndOf = "@id/risco_baixo_t5"
+            app:layout_constraintStart_toStartOf = "@id/risco_baixo_t5"
+            app:layout_constraintTop_toBottomOf = "@id/risco_baixo_t5"/>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</HorizontalScrollView>

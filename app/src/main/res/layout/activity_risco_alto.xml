@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiscoAltoActivity">
+
+    <TextView
+        android:id="@+id/risco_alto_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Risco Alto"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/risco_alto_t1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="	Manutenção da higiene corporal, mantendo a pele limpa e seca."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/risco_alto_titulo"
+        app:layout_constraintTop_toBottomOf="@id/risco_alto_titulo" />
+
+    <TextView
+        android:id="@+id/risco_alto_t2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="	Hidratação diária da pele do paciente com hidratantes e umectantes."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/risco_alto_t1"
+        app:layout_constraintStart_toStartOf="@id/risco_alto_t1"
+        app:layout_constraintTop_toBottomOf="@id/risco_alto_t1" />
+    <ImageView
+        android:id="@+id/risco_alto_i1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/hidratante"
+        app:layout_constraintEnd_toEndOf="@id/risco_alto_t2"
+        app:layout_constraintStart_toStartOf="@id/risco_alto_t2"
+        app:layout_constraintTop_toBottomOf="@id/risco_alto_t2"/>
+
+    <TextView
+        android:id="@+id/risco_alto_t3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="	Realizar  avaliação criteriosa da pele pelo menos uma vez por dia, especialmente nas áreas de proeminências ósseas (cotovelos, região sacral, joelhos, calcâneo e maléolo) e pelo menos duas vezes por dia nas regiões submetidas à pressão por dispositivos, como cateteres, tubos e drenos;"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/risco_alto_i1"
+        app:layout_constraintStart_toStartOf="@id/risco_alto_i1"
+        app:layout_constraintTop_toBottomOf="@id/risco_alto_i1" />
+    <TextView
+        android:id="@+id/risco_alto_t4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="	Manter curativo 5 camadas com silicone  para proteção nas proeminências ósseas (região sacral, calcâneo e maléolo):"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/risco_alto_t3"
+        app:layout_constraintStart_toStartOf="@id/risco_alto_t3"
+        app:layout_constraintTop_toBottomOf="@id/risco_alto_t3" />
+    <ImageView
+        android:id="@+id/risco_alto_i2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/lpcurativo"
+        app:layout_constraintEnd_toEndOf="@id/risco_alto_t4"
+        app:layout_constraintStart_toStartOf="@id/risco_alto_t4"
+        app:layout_constraintTop_toBottomOf="@id/risco_alto_t4"/>
+    <TextView
+        android:id="@+id/risco_alto_t5"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="	Mudança de Decúbito de 2/2 horas conforme prescrição de enfermagem e relógio de mudança de decúbito "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/risco_alto_i2"
+        app:layout_constraintStart_toStartOf="@id/risco_alto_i2"
+        app:layout_constraintTop_toBottomOf="@id/risco_alto_i2" />
+    <ImageView
+        android:id="@+id/risco_alto_i3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lpmudancadecubito"
+        app:layout_constraintEnd_toEndOf="@id/risco_alto_t5"
+        app:layout_constraintStart_toStartOf="@id/risco_alto_t5"
+        app:layout_constraintTop_toBottomOf="@id/risco_alto_t5"/>
+    <TextView
+        android:id="@+id/risco_alto_t6"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="	Uso de colchão especial, almofadas e/ou de coxins para redistribuir a pressão. "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/risco_alto_i3"
+        app:layout_constraintStart_toStartOf="@id/risco_alto_i3"
+        app:layout_constraintTop_toBottomOf="@id/risco_alto_i3" />
+    <ImageView
+        android:id="@+id/risco_alto_i4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lpcolchao"
+        app:layout_constraintEnd_toEndOf="@id/risco_alto_t6"
+        app:layout_constraintStart_toStartOf="@id/risco_alto_t6"
+        app:layout_constraintTop_toBottomOf="@id/risco_alto_t6"/>
+    <TextView
+        android:id="@+id/risco_alto_t7"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="	Manter posicionadores fluidizados para aliviar a pressão sobre proeminências ósseas."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/risco_alto_i4"
+        app:layout_constraintStart_toStartOf="@id/risco_alto_i4"
+        app:layout_constraintTop_toBottomOf="@id/risco_alto_i4" />
+    <ImageView
+        android:id="@+id/risco_alto_i5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lpposicionadores"
+        app:layout_constraintEnd_toEndOf="@id/risco_alto_t7"
+        app:layout_constraintStart_toStartOf="@id/risco_alto_t7"
+        app:layout_constraintTop_toBottomOf="@id/risco_alto_t7"/>
+    <TextView
+        android:id="@+id/risco_alto_t8"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="	Manutenção de ingestão nutricional (calórica e proteica) e hídrica adequadas."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/risco_alto_i5"
+        app:layout_constraintStart_toStartOf="@id/risco_alto_i5"
+        app:layout_constraintTop_toBottomOf="@id/risco_alto_i5" />
+
+
+</android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</HorizontalScrollView>

@@ -1,0 +1,24 @@
+{
+  "tipos": [
+    {
+      "imagem" : "@color/preto",
+      "tipo" : "tipo 1",
+      "descricao"  : "bla bla bla bla"
+    },
+    {
+      "imagem" : "@color/preto",
+      "tipo" : "tipo 2",
+      "descricao"  : "bla bla bla bla"
+    },
+    {
+      "imagem" : "@color/preto",
+      "tipo" : "tipo 3",
+      "descricao"  : "bla bla bla bla"
+    },
+    {
+      "imagem" : "@color/preto",
+      "tipo" : "tipo 4",
+      "descricao"  : "bla bla bla bla"
+    }
+  ]
+}

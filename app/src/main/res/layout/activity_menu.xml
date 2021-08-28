@@ -1,0 +1,67 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Novo Paciente"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:elevation="12dp"
+            android:background="@drawable/fundo"
+            android:stateListAnimator="@null"
+            android:id="@+id/menu_novo_paciente"
+            android:layout_marginVertical="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pacientes Lista"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:elevation="12dp"
+            android:background="@drawable/fundo"
+            android:stateListAnimator="@null"
+            android:id="@+id/menu_pacientes_lista"
+            android:layout_marginVertical="10dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avaliação"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:elevation="12dp"
+            android:background="@drawable/fundo"
+            android:stateListAnimator="@null"
+            android:id="@+id/menu_avaliacao"
+            android:layout_marginVertical="10dp"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultados"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:elevation="12dp"
+            android:background="@drawable/fundo"
+            android:stateListAnimator="@null"
+            android:id="@+id/menu_resultados"
+            android:layout_marginVertical="10dp"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView >

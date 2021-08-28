@@ -1,0 +1,2525 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="1- Solução de limpeza e retirada de corbetura anterior"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Soro Fisiológico 0,9% :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/calculadora_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a" />
+
+
+
+        <SeekBar
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico" />
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico_barra"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico_barra"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico_barra"
+            android:text="0"/>
+
+        <EditText
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico_texto"/>
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Ringer lactato:"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/calculadora_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@+id/calculadora_s_d_l_e_r_d_c_a_soro_fisiologico" />
+
+        <SeekBar
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato" />
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato_barra"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato_barra"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato_barra"
+            android:text="0"/>
+
+        <EditText
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato_texto"/>
+
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_PHMB"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="PHMB :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/calculadora_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_ringer_lactato" />
+
+        <SeekBar
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_PHMB_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_PHMB"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_PHMB"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_PHMB" />
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_PHMB_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_PHMB_barra"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_PHMB_barra"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_PHMB_barra"
+            android:text="0"/>
+
+        <EditText
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_PHMB_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_PHMB_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_PHMB_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_PHMB_texto"
+            android:text="0"/>
+
+
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_PVPI"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="PVPI :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/calculadora_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_PHMB" />
+
+        <SeekBar
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_PVPI_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_PVPI"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_PVPI"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_PVPI" />
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_PVPI_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_PVPI_barra"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_PVPI_barra"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_PVPI_barra"
+            android:text="0"/>
+
+        <EditText
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_PVPI_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_PVPI_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_PVPI_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_PVPI_texto"/>
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_Clorexidine"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Clorexidine :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/calculadora_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_PVPI" />
+
+        <SeekBar
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_Clorexidine_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_Clorexidine"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_Clorexidine"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_Clorexidine" />
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_Clorexidine_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_Clorexidine_barra"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_Clorexidine_barra"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_Clorexidine_barra"
+            android:text="0"/>
+
+        <EditText
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_Clorexidine_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_Clorexidine_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_Clorexidine_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_Clorexidine_texto"/>
+
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Removedor de adesivo:"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/calculadora_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_Clorexidine" />
+
+        <SeekBar
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo" />
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_barra"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_barra"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_barra"
+            android:text="0"/>
+
+
+        <EditText
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_texto"/>
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Removedor de adesivo unidade :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/calculadora_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo" />
+
+        <SeekBar
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u" />
+
+        <TextView
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_barra"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_barra"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_barra"
+            android:text="0"/>
+
+        <EditText
+            android:id="@+id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_texto"/>
+
+        <TextView
+            android:id="@+id/calculadora_cobertura_primaria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="2- Cobertura primária"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculadora_s_d_l_e_r_d_c_a_removedor_de_adesivo_u"/>
+
+        <TextView
+            android:id="@+id/calculadora_cobertura_primaria_age"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="AGE:"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf="@id/calculadora_cobertura_primaria" />
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_age_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_age"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_age"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_age"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_age_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_age_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_age_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_age_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_age_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_age_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_age_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_age_texto"/>
+
+        <TextView
+            android:id="@+id/calculadora_cobertura_primaria_alginato"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Alginato:"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf="@id/calculadora_cobertura_primaria_age" />
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_alginato_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_alginato"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_alginato"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_alginato"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_alginato_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_alginato_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_alginato_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_alginato_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_alginato_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_alginato_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_alginato_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_alginato_texto"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_alginato_com_prata"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "alginato_com_prata :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_alginato"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_alginato_com_prata_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_alginato_com_prata"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_alginato_com_prata"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_alginato_com_prata"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_alginato_com_prata_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_alginato_com_prata_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_alginato_com_prata_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_alginato_com_prata_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_alginato_com_prata_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_alginato_com_prata_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_alginato_com_prata_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_alginato_com_prata_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_espuma"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "espuma :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_alginato_com_prata"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_espuma"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_espuma"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_espuma"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_espuma_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_espuma_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_espuma_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_espuma_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_espuma_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_espuma_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_com_prata"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "espuma_com_prata :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_espuma"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_com_prata_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_com_prata"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_espuma_com_prata"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_espuma_com_prata"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_com_prata_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_com_prata_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_espuma_com_prata_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_espuma_com_prata_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_espuma_com_prata_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_espuma_com_prata_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_espuma_com_prata_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_espuma_com_prata_texto"/>
+
+        <TextView
+            android:id="@+id/calculadora_cobertura_primaria_espuma_com_silicone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Espuma com silicone:"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf="@id/calculadora_cobertura_primaria_espuma_com_prata" />
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_com_silicone_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_com_silicone_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_espuma_com_silicone_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_espuma_com_silicone_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_espuma_com_silicone_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_espuma_com_silicone_texto"/>
+
+
+        <TextView
+            android:id="@+id/calculadora_cobertura_primaria_espuma_com_silicone_prata"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Espuma com silicone e prata :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf="@id/calculadora_cobertura_primaria_espuma_com_silicone" />
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_com_silicone_prata_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_com_silicone_prata_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_espuma_com_silicone_prata_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_texto"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "espuma_com_silicone_prata_com_borda:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_texto"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "espuma_com_silicone_prata_com_borda_camada_silicone :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone_texto"/>
+
+        <TextView
+            android:id="@+id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="espuma_borda_camada_silicone_impregnada_prata :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf="@id/calculadora_cobertura_primaria_espuma_com_silicone_prata_com_borda_camada_silicone" />
+
+        <SeekBar
+            android:id="@+id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@+id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata"
+            app:layout_constraintStart_toEndOf="@+id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata"
+            app:layout_constraintTop_toTopOf="@+id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata" />
+
+
+        <TextView
+            android:id="@+id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata_barra"
+            app:layout_constraintStart_toEndOf="@+id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata_barra"
+            app:layout_constraintTop_toTopOf="@+id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata_barra"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata_texto"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_hidrofibra"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "espuma_com_silicone_prata com silicone:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_espuma_borda_camada_silicone_impregnada_prata"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_hidrofibra_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_hidrofibra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_hidrofibra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_hidrofibra"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_hidrofibra_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_hidrofibra_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_hidrofibra_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_hidrofibra_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_hidrofibra_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_hidrofibra_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_hidrofibra_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_hidrofibra_texto"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_hidrofibra_prata"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "espuma_com_silicone_prata com silicone e prata :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_hidrofibra"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_hidrofibra_prata_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_hidrofibra_prata"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_hidrofibra_prata"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_hidrofibra_prata"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_hidrofibra_prata_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_hidrofibra_prata_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_hidrofibra_prata_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_hidrofibra_prata_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_hidrofibra_prata_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_hidrofibra_prata_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_hidrofibra_prata_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_hidrofibra_prata_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_hidrogel"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "hidrogel :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_hidrofibra_prata"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_hidrogel_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@+id/calculadora_cobertura_primaria_hidrogel"
+            app:layout_constraintStart_toEndOf = "@+id/calculadora_cobertura_primaria_hidrogel"
+            app:layout_constraintTop_toTopOf = "@+id/calculadora_cobertura_primaria_hidrogel"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_hidrogel_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:text = "0"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@+id/calculadora_cobertura_primaria_hidrogel_barra"
+            app:layout_constraintStart_toEndOf = "@+id/calculadora_cobertura_primaria_hidrogel_barra"
+            app:layout_constraintTop_toTopOf = "@+id/calculadora_cobertura_primaria_hidrogel_barra"
+            app:layout_constraintVertical_bias = "1.0"/>
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_hidrogel_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_hidrogel_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_hidrogel_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_hidrogel_texto"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_papaina"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "espuma_com_silicone_prata com silicone:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_hidrogel"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_papaina_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_papaina"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_papaina"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_papaina"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_papaina_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_papaina_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_papaina_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_papaina_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_papaina_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_papaina_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_papaina_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_papaina_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_sulfadiazina_prata"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "espuma_com_silicone_prata com silicone e prata :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_papaina"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_sulfadiazina_prata_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_sulfadiazina_prata"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_sulfadiazina_prata"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_sulfadiazina_prata"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_sulfadiazina_prata_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_sulfadiazina_prata_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_sulfadiazina_prata_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_sulfadiazina_prata_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_sulfadiazina_prata_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_sulfadiazina_prata_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_sulfadiazina_prata_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_sulfadiazina_prata_texto"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_kolagenase"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "kolagenase :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_sulfadiazina_prata"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_kolagenase_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@+id/calculadora_cobertura_primaria_kolagenase"
+            app:layout_constraintStart_toEndOf = "@+id/calculadora_cobertura_primaria_kolagenase"
+            app:layout_constraintTop_toTopOf = "@+id/calculadora_cobertura_primaria_kolagenase"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_kolagenase_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:text = "0"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@+id/calculadora_cobertura_primaria_kolagenase_barra"
+            app:layout_constraintStart_toEndOf = "@+id/calculadora_cobertura_primaria_kolagenase_barra"
+            app:layout_constraintTop_toTopOf = "@+id/calculadora_cobertura_primaria_kolagenase_barra"
+            app:layout_constraintVertical_bias = "1.0"/>
+
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_kolagenase_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_kolagenase_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_kolagenase_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_kolagenase_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_tela_prata_nanocristalina"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "espuma_com_silicone_prata com silicone:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_kolagenase"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_tela_prata_nanocristalina_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_tela_prata_nanocristalina"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_tela_prata_nanocristalina"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_tela_prata_nanocristalina"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_tela_prata_nanocristalina_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_tela_prata_nanocristalina_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_tela_prata_nanocristalina_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_tela_prata_nanocristalina_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_tela_prata_nanocristalina_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_tela_prata_nanocristalina_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_tela_prata_nanocristalina_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_tela_prata_nanocristalina_texto"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "Tela_nao_aderente_impregnada:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_tela_prata_nanocristalina"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada_texto"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_carvao"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "carvao:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_Tela_nao_aderente_impregnada"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_carvao_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_carvao"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_carvao"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_carvao"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_carvao_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_carvao_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_carvao_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_carvao_barra"
+            android:text = "0"/>
+
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_carvao_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_carvao_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_carvao_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_carvao_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_carvao_com_prata"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "carvao_com_prata:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_carvao"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_carvao_com_prata_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_carvao_com_prata"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_carvao_com_prata"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_carvao_com_prata"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_carvao_com_prata_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_carvao_com_prata_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_carvao_com_prata_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_carvao_com_prata_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_carvao_com_prata_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_carvao_com_prata_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_carvao_com_prata_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_carvao_com_prata_texto"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_filme_transparente"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "filme_transparente:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_carvao_com_prata"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_filme_transparente_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_filme_transparente"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_filme_transparente"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_filme_transparente"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_filme_transparente_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_filme_transparente_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_filme_transparente_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_filme_transparente_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_filme_transparente_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_filme_transparente_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_filme_transparente_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_filme_transparente_texto"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_rayon"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "rayon:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_filme_transparente"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_rayon_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_rayon"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_rayon"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_rayon"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_rayon_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_rayon_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_rayon_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_rayon_barra"
+            android:text = "0"/>
+
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_rayon_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_rayon_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_rayon_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_rayon_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_hidrocoloide"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "hidrocoloide:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_rayon"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_hidrocoloide_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_hidrocoloide"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_hidrocoloide"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_hidrocoloide"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_hidrocoloide_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_hidrocoloide_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_hidrocoloide_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_hidrocoloide_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_hidrocoloide_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_hidrocoloide_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_hidrocoloide_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_hidrocoloide_texto"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_protetorcutaneo"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "Protetor cutaneo:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_primaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_primaria_hidrocoloide"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_primaria_protetorcutaneo_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_protetorcutaneo"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_protetorcutaneo"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_protetorcutaneo"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_primaria_protetorcutaneo_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_primaria_protetorcutaneo_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_primaria_protetorcutaneo_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_primaria_protetorcutaneo_barra"
+            android:text = "0"/>
+
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_primaria_protetorcutaneo_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_primaria_protetorcutaneo_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_primaria_protetorcutaneo_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_primaria_protetorcutaneo_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "10dp"
+            android:text = "3- Cobertura Secundária"
+            android:textSize = "25dp"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/calculadora_cobertura_primaria_protetorcutaneo"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_gaze_esteril"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "gaze_esteril  :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_secundaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_secundaria"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_secundaria_gaze_esteril_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_gaze_esteril"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_gaze_esteril"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_gaze_esteril"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_gaze_esteril_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_gaze_esteril_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_gaze_esteril_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_gaze_esteril_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_secundaria_gaze_esteril_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_secundaria_gaze_esteril_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_secundaria_gaze_esteril_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_secundaria_gaze_esteril_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_gaze_nao_esteril"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "gaze_nao_esteril :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_secundaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_secundaria_gaze_esteril"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_secundaria_gaze_nao_esteril_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_gaze_nao_esteril"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_gaze_nao_esteril"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_gaze_nao_esteril"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_gaze_nao_esteril_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_gaze_nao_esteril_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_gaze_nao_esteril_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_gaze_nao_esteril_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_secundaria_gaze_nao_esteril_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_secundaria_gaze_nao_esteril_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_secundaria_gaze_nao_esteril_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_secundaria_gaze_nao_esteril_texto"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_rayon_2"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "rayon_2 :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_secundaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_secundaria_gaze_nao_esteril"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_secundaria_rayon_2_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_rayon_2"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_rayon_2"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_rayon_2"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_rayon_2_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_rayon_2_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_rayon_2_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_rayon_2_barra"
+            android:text = "0"/>
+
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_secundaria_rayon_2_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_secundaria_rayon_2_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_secundaria_rayon_2_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_secundaria_rayon_2_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_atadura"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "atadura:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_secundaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_secundaria_rayon_2"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_secundaria_atadura_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_atadura"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_atadura"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_atadura"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_atadura_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_atadura_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_atadura_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_atadura_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_secundaria_atadura_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_secundaria_atadura_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_secundaria_atadura_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_secundaria_atadura_texto"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_fita_adesiva"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "fita_adesiva:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_secundaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_secundaria_atadura"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_secundaria_fita_adesiva_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_fita_adesiva"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_fita_adesiva"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_fita_adesiva"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_fita_adesiva_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_fita_adesiva_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_fita_adesiva_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_fita_adesiva_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_secundaria_fita_adesiva_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_secundaria_fita_adesiva_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_secundaria_fita_adesiva_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_secundaria_fita_adesiva_texto"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_chumaco"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "chumaco:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_secundaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_secundaria_fita_adesiva"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_secundaria_chumaco_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_chumaco"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_chumaco"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_chumaco"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_chumaco_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_chumaco_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_chumaco_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_chumaco_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_secundaria_chumaco_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_secundaria_chumaco_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_secundaria_chumaco_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_secundaria_chumaco_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_compressa_esteril"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "compressa_esteril :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_secundaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_secundaria_chumaco"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_secundaria_compressa_esteril_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_compressa_esteril"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_compressa_esteril"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_compressa_esteril"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_compressa_esteril_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_compressa_esteril_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_compressa_esteril_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_compressa_esteril_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_secundaria_compressa_esteril_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_secundaria_compressa_esteril_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_secundaria_compressa_esteril_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_secundaria_compressa_esteril_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_espuma"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "espuma:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_secundaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_secundaria_compressa_esteril"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_secundaria_espuma_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_espuma"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_espuma"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_espuma"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_espuma_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_espuma_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_espuma_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_espuma_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_secundaria_espuma_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_secundaria_espuma_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_secundaria_espuma_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_secundaria_espuma_texto"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_filme_transparente_2"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "filme_transparente_2 :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_cobertura_secundaria"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_cobertura_secundaria_espuma"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_cobertura_secundaria_filme_transparente_2_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_filme_transparente_2"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_filme_transparente_2"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_filme_transparente_2"/>
+
+        <TextView
+            android:id = "@+id/calculadora_cobertura_secundaria_filme_transparente_2_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_cobertura_secundaria_filme_transparente_2_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_cobertura_secundaria_filme_transparente_2_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_cobertura_secundaria_filme_transparente_2_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_cobertura_secundaria_filme_transparente_2_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_cobertura_secundaria_filme_transparente_2_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_cobertura_secundaria_filme_transparente_2_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_cobertura_secundaria_filme_transparente_2_texto"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "10dp"
+            android:text = "4- Terapias adjuvantes "
+            android:textSize = "25dp"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/calculadora_cobertura_secundaria_filme_transparente_2"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_pressao_negativa_prata"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "pressao_negativa_prata  :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_terapias_adjuvantes"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_terapias_adjuvantes"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_terapias_adjuvantes_pressao_negativa_prata_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_prata"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_prata"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_prata"/>
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_pressao_negativa_prata_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_prata_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_prata_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_prata_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_terapias_adjuvantes_pressao_negativa_prata_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_terapias_adjuvantes_pressao_negativa_prata_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_terapias_adjuvantes_pressao_negativa_prata_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_terapias_adjuvantes_pressao_negativa_prata_texto"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "pressao_negativa_s_prata :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_terapias_adjuvantes"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_prata"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata"/>
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata_barra"
+            android:text = "0"/>
+
+
+        <EditText
+            android:id="@+id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata_texto"/>
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_camara_hiprebarica"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "camara_hiprebarica:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_terapias_adjuvantes"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_terapias_adjuvantes_pressao_negativa_s_prata"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_terapias_adjuvantes_camara_hiprebarica_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_camara_hiprebarica"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_camara_hiprebarica"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_camara_hiprebarica"/>
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_camara_hiprebarica_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_camara_hiprebarica_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_camara_hiprebarica_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_camara_hiprebarica_barra"
+            android:text = "0"/>
+
+
+        <EditText
+            android:id="@+id/calculadora_terapias_adjuvantes_camara_hiprebarica_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_terapias_adjuvantes_camara_hiprebarica_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_terapias_adjuvantes_camara_hiprebarica_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_terapias_adjuvantes_camara_hiprebarica_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_laserterapia"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "laserterapia:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_terapias_adjuvantes"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_terapias_adjuvantes_camara_hiprebarica"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_terapias_adjuvantes_laserterapia_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_laserterapia"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_laserterapia"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_laserterapia"/>
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_laserterapia_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_laserterapia_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_laserterapia_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_laserterapia_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_terapias_adjuvantes_laserterapia_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_terapias_adjuvantes_laserterapia_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_terapias_adjuvantes_laserterapia_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_terapias_adjuvantes_laserterapia_texto"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_procedimento_cirurgico"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "procedimento_cirurgico:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_terapias_adjuvantes"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_terapias_adjuvantes_laserterapia"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_terapias_adjuvantes_procedimento_cirurgico_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_procedimento_cirurgico"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_procedimento_cirurgico"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_procedimento_cirurgico"/>
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_procedimento_cirurgico_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_procedimento_cirurgico_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_procedimento_cirurgico_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_procedimento_cirurgico_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_terapias_adjuvantes_procedimento_cirurgico_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_terapias_adjuvantes_procedimento_cirurgico_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_terapias_adjuvantes_procedimento_cirurgico_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_terapias_adjuvantes_procedimento_cirurgico_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_desbridamento_cirurgico"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "desbridamento_cirurgico :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_terapias_adjuvantes"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_terapias_adjuvantes_procedimento_cirurgico"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_terapias_adjuvantes_desbridamento_cirurgico_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_desbridamento_cirurgico"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_desbridamento_cirurgico"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_desbridamento_cirurgico"/>
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_desbridamento_cirurgico_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_desbridamento_cirurgico_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_desbridamento_cirurgico_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_desbridamento_cirurgico_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_terapias_adjuvantes_desbridamento_cirurgico_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_terapias_adjuvantes_desbridamento_cirurgico_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_terapias_adjuvantes_desbridamento_cirurgico_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_terapias_adjuvantes_desbridamento_cirurgico_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_taxa_de_sala"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "taxa_de_sala:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_terapias_adjuvantes"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_terapias_adjuvantes_desbridamento_cirurgico"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_terapias_adjuvantes_taxa_de_sala_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_taxa_de_sala"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_taxa_de_sala"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_taxa_de_sala"/>
+
+        <TextView
+            android:id = "@+id/calculadora_terapias_adjuvantes_taxa_de_sala_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_terapias_adjuvantes_taxa_de_sala_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_terapias_adjuvantes_taxa_de_sala_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_terapias_adjuvantes_taxa_de_sala_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_terapias_adjuvantes_taxa_de_sala_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_terapias_adjuvantes_taxa_de_sala_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_terapias_adjuvantes_taxa_de_sala_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_terapias_adjuvantes_taxa_de_sala_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao"
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "10dp"
+            android:text = "5- Medicação"
+            android:textSize = "25dp"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toBottomOf = "@+id/calculadora_terapias_adjuvantes_taxa_de_sala"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_analgesicos_antiinflamatorios"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "analgesicos_antiinflamatorios  :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_medicacao"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_medicacao"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_medicacao_analgesicos_antiinflamatorios_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_analgesicos_antiinflamatorios"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_analgesicos_antiinflamatorios"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_analgesicos_antiinflamatorios"/>
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_analgesicos_antiinflamatorios_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_analgesicos_antiinflamatorios_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_analgesicos_antiinflamatorios_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_analgesicos_antiinflamatorios_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_medicacao_analgesicos_antiinflamatorios_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_medicacao_analgesicos_antiinflamatorios_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_medicacao_analgesicos_antiinflamatorios_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_medicacao_analgesicos_antiinflamatorios_texto"/>
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_anestesicos"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "anestesicos :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_medicacao"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_medicacao_analgesicos_antiinflamatorios"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_medicacao_anestesicos_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_anestesicos"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_anestesicos"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_anestesicos"/>
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_anestesicos_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_anestesicos_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_anestesicos_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_anestesicos_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_medicacao_anestesicos_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_medicacao_anestesicos_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_medicacao_anestesicos_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_medicacao_anestesicos_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_antibioticos"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "antibioticos:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_medicacao"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_medicacao_anestesicos"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_medicacao_antibioticos_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_antibioticos"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_antibioticos"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_antibioticos"/>
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_antibioticos_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_antibioticos_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_antibioticos_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_antibioticos_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_medicacao_antibioticos_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_medicacao_antibioticos_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_medicacao_antibioticos_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_medicacao_antibioticos_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_horas_do_profissional"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "horas_do_profissional :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_medicacao"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_medicacao_antibioticos"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_medicacao_horas_do_profissional_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_horas_do_profissional"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_horas_do_profissional"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_horas_do_profissional"/>
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_horas_do_profissional_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_horas_do_profissional_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_horas_do_profissional_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_horas_do_profissional_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_medicacao_horas_do_profissional_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_medicacao_horas_do_profissional_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_medicacao_horas_do_profissional_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_medicacao_horas_do_profissional_texto"/>
+
+
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_tecnico_de_enfermagem"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "tecnico_de_enfermagem:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_medicacao"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_medicacao_horas_do_profissional"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_medicacao_tecnico_de_enfermagem_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_tecnico_de_enfermagem"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_tecnico_de_enfermagem"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_tecnico_de_enfermagem"/>
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_tecnico_de_enfermagem_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_tecnico_de_enfermagem_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_tecnico_de_enfermagem_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_tecnico_de_enfermagem_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_medicacao_tecnico_de_enfermagem_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_medicacao_tecnico_de_enfermagem_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_medicacao_tecnico_de_enfermagem_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_medicacao_tecnico_de_enfermagem_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_enfermeiro"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "enfermeiro :"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_medicacao"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_medicacao_tecnico_de_enfermagem"/>
+
+        <SeekBar
+            android:id = "@+id/calculadora_medicacao_enfermeiro_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_enfermeiro"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_enfermeiro"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_enfermeiro"/>
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_enfermeiro_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_enfermeiro_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_enfermeiro_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_enfermeiro_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_medicacao_enfermeiro_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_medicacao_enfermeiro_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_medicacao_enfermeiro_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_medicacao_enfermeiro_texto"/>
+
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_enfermeiro_especialista"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "enfermeiro_especialista:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_medicacao"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_medicacao_enfermeiro"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_medicacao_enfermeiro_especialista_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_enfermeiro_especialista"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_enfermeiro_especialista"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_enfermeiro_especialista"/>
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_enfermeiro_especialista_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_enfermeiro_especialista_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_enfermeiro_especialista_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_enfermeiro_especialista_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_medicacao_enfermeiro_especialista_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_medicacao_enfermeiro_especialista_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_medicacao_enfermeiro_especialista_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_medicacao_enfermeiro_especialista_texto"/>
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_medico"
+            android:layout_width = "120dp"
+            android:layout_height = "wrap_content"
+            android:layout_margin = "12dp"
+            android:text = "medico:"
+            android:textSize = "15dp"
+            app:layout_constraintStart_toStartOf = "@id/calculadora_medicacao"
+            app:layout_constraintTop_toBottomOf = "@id/calculadora_medicacao_enfermeiro_especialista"/>
+
+
+        <SeekBar
+            android:id = "@+id/calculadora_medicacao_medico_barra"
+            android:layout_width = "150dp"
+            android:layout_height = "50dp"
+            android:layout_margin = "12dp"
+            android:max = "100"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_medico"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_medico"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_medico"/>
+
+        <TextView
+            android:id = "@+id/calculadora_medicacao_medico_texto"
+            android:layout_width = "50dp"
+            android:layout_height = "wrap_content"
+            android:textSize = "15dp"
+            app:layout_constraintBottom_toBottomOf = "@id/calculadora_medicacao_medico_barra"
+            app:layout_constraintStart_toEndOf = "@id/calculadora_medicacao_medico_barra"
+            app:layout_constraintTop_toTopOf = "@id/calculadora_medicacao_medico_barra"
+            android:text = "0"/>
+
+        <EditText
+            android:id="@+id/calculadora_medicacao_medico_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Preco"
+            tools:layout_editor_absoluteX="8dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@id/calculadora_medicacao_medico_texto"
+            app:layout_constraintStart_toEndOf="@id/calculadora_medicacao_medico_texto"
+            app:layout_constraintTop_toTopOf="@id/calculadora_medicacao_medico_texto"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</HorizontalScrollView>
+
+</ScrollView>

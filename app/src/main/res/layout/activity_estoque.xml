@@ -1,0 +1,273 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="1- Solução de limpeza e retirada de corbetura anterior"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_pre"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Preço do soro Fisiológico 0,9% :"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/estoque_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a" />
+
+
+        <SeekBar
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_barra_pre"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_pre"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_pre"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_pre" />
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_pre_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_barra_pre"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_barra_pre"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_barra_pre"
+            android:text="0"/>
+
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_qua"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Quantidade de soro Fisiológico 0,9% :"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/estoque_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_pre" />
+
+        <SeekBar
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_barra_qua"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_qua"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_qua"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_qua" />
+
+
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_qua_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_barra_qua"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_barra_qua"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_barra_qua"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_ringer_lactato"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Ringer lactato:"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/estoque_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_soro_fisiologico_qua" />
+
+        <SeekBar
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_ringer_lactato_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_ringer_lactato"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_ringer_lactato"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_ringer_lactato" />
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_ringer_lactato_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_ringer_lactato_barra"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_ringer_lactato_barra"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_ringer_lactato_barra"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_PHMB"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="PHMB :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/estoque_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_ringer_lactato" />
+
+        <SeekBar
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_PHMB_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_PHMB"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_PHMB"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_PHMB" />
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_PHMB_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_PHMB_barra"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_PHMB_barra"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_PHMB_barra"
+            android:text="0"/>
+
+
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_PVPI"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="PVPI :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/estoque_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_PHMB" />
+
+        <SeekBar
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_PVPI_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_PVPI"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_PVPI"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_PVPI" />
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_PVPI_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_PVPI_barra"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_PVPI_barra"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_PVPI_barra"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_Clorexidine"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Clorexidine :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/estoque_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_PVPI" />
+
+        <SeekBar
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_Clorexidine_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_Clorexidine"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_Clorexidine"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_Clorexidine" />
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_Clorexidine_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_Clorexidine_barra"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_Clorexidine_barra"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_Clorexidine_barra"
+            android:text="0"/>
+
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Removedor de adesivo:"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/estoque_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_Clorexidine" />
+
+        <SeekBar
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo" />
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_barra"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_barra"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_barra"
+            android:text="0"/>
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_u"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Removedor de adesivo unidade :"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@id/estoque_s_d_l_e_r_d_c_a"
+            app:layout_constraintTop_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo" />
+
+        <SeekBar
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_barra"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:max="100"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_u"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_u"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_u" />
+
+        <TextView
+            android:id="@+id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_texto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_barra"
+            app:layout_constraintStart_toEndOf="@id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_barra"
+            app:layout_constraintTop_toTopOf="@id/estoque_s_d_l_e_r_d_c_a_removedor_de_adesivo_u_barra"
+            android:text="0"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

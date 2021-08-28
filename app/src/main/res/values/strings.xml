@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Protótipo 2</string>
+
+
+    <string-array name="sexo">
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+</resources>
